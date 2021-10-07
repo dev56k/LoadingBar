@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/loading-bar.css"/>
+    <script type="text/javascript" src="js/loading-bar.js"></script>    
+</head>
+<body>
+  
+<div class="container-lg">
+    <div class="row">
+        <div class="col-12">
+            <div class="card text-white bg-info">
+                <div class="card-body"><h1>LoadingBar - Example 1</h1></div>
+            </div>
+        </div>
+    </div><br/>
+    <div class="row">        
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="myBar1 label-center" style="width: 280px; height: 280px; text-align: center;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="myBar2 label-center" style="width: 280px; height: 280px; text-align: center;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="myBar3 label-center" style="width: 280px; height: 280px; text-align: center;"></div>
+                </div>
+            </div>                
+        </div>        
+    </div><br />
+    <div class="row">
+        <div class="col-12">    
+        <h1>LoadingBar.js</h1>
+        LoadingBar.js is a highly flexible, open sourced progress bar library based on SVG.
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    .ldBar-label {
+      color:#279b1d
+      font-family: 'Tahoma';
+      font-size: 2.5em;
+      font-weight: 900;
+    }
+    .ldBar path.mainline {
+    /* styling of bar omitted */        
+    }  
+</style>
+<script>
+    var bar1 = new ldBar(".myBar1", {
+    "stroke": '#09f',
+    "stroke-width": 12,
+    "preset": "circle",
+    "value": 75
+    });
+    var bar2 = new ldBar(".myBar2", {
+    "stroke": '#279',
+    "stroke-width": 12,
+    "preset": "circle",
+    "value": 43
+    });
+    var bar3 = new ldBar(".myBar3", {
+    "stroke": '#f99',
+    "stroke-width": 12,
+    "preset": "circle",
+    "value": 91
+    });
+</script>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+</body>
+</html>
